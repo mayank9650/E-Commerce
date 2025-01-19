@@ -1,0 +1,21 @@
+.navbar {
+    background: var(--mainWhite);
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid var(--primaryColor);
+    box-shadow: var(--lightShadow);
+}
+
+.nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--smallWidth);
+    margin: 0 auto;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}

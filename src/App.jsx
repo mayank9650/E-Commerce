@@ -1,11 +1,12 @@
 
 import './App.css'
+import Dashboard from './pages/Dashboard'
 
 function App() {
 
   return (
     <>
-      <h2>Basic setup</h2>
+      <Dashboard/>
     </>
   )
 }
