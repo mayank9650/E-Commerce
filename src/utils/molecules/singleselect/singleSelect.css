@@ -1,0 +1,69 @@
+/* Base styles for dropdown container */
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Button to toggle dropdown */
+.dropdown-toggle {
+    padding: 0.5rem 1rem;
+    font-size: var(--font-size-large-1);
+    background-color: var(--dropdownColor);
+    color: var(--mainWhite);
+    border: none;
+    border-radius: var(--mainBorderRadius);
+    cursor: pointer;
+}
+
+.dropdown-toggle:hover {
+    background-color: var(--dropdownHover);
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid var(--dropdownColor);
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    z-index: 10;
+}
+
+
+.dropdown-menu li {
+    margin: 0.5rem 0;
+    font-size: var(--font-size-large-1);
+}
+
+.dropdown-menu input {
+    margin-right: 0.5rem;
+}
+
+.dropdown-actions {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-action-btn {
+    padding: 0.5rem 1rem;
+    font-size: var(--font-size-large-1);
+    background-color: #476a2e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-action-btn:hover {
+    background-color: #365d24;
+}
+
+.dropdown-action-btn:active {
+    background-color: #c02c03;
+}

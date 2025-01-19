@@ -1,0 +1,19 @@
+/* Mobile-first button styles (default for small screens) */
+.button {
+    color: var(--primaryColor);
+    /* border: 2px solid var(--primaryColor); */
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: var(--font-size-large-1);
+    border-radius: var(--mainBorderRadius);
+    display: inline-block;
+    background: var(--dropdownColor);
+    color: var(--mainWhite);
+    border-color: transparent;
+    margin: 0;
+    border: none;
+}
+
+.button:hover {
+    background-color: var(--dropdownHover);
+}

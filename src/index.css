@@ -25,7 +25,35 @@ Variables
   --breakpoint-sm: 480px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
+  font-size: 16px;
+  --primaryButtonColor: #476a2e;
+  --dropdownColor: #476a2e;
+  --dropdownHover: #365d24;
 }
+
+@media screen and (min-width: 350px) {
+  :root{
+    --font-size-large-1: 1.4rem;
+    --font-size-large-2: 2.4rem;
+  }
+}
+
+
+@media (min-width: 780px) {
+  :root {
+    --font-size-large-1: 1.2rem;
+    --font-size-large-2: 2.2rem;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  :root {
+    --font-size-large-1: 1rem;
+    --font-size-large-2: 2rem;
+  }
+}
+
 
 /* 
 ====== 
