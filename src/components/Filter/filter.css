@@ -1,0 +1,31 @@
+.filter-section {
+  margin: 4vw 0 0 0;
+  display: flex;
+  gap: 2vw;
+}
+.filter-section .dropdown-container,
+.filter-section .dropdown-toggle,
+.filter-section .sort-btn {
+  width: clamp(220px, 12vw, 300px);
+}
+
+@media screen and (max-width: 1024px) {
+  .filter-section {
+    margin: 8vw 0 4vw 0;
+    gap: 4vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .filter-section {
+    margin: 8vw auto;
+    flex-direction: column;
+    gap: 7vw;
+  }
+  .filter-section h2,
+  .filter-section .dropdown-toggle,
+  .filter-section .dropdown-container,
+  .filter-section .sort-btn {
+    width: 100%;
+  }
+}
