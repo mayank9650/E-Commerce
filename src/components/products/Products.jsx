@@ -10,6 +10,7 @@ import ProductList from "./productList/ProductList";
 import "./products.css";
 import useObserver from "../../utils/useObserver";
 import Loader from "../../utils/molecules/loader/Loader";
+import ProductDetail from "./productDetail/ProductDetail";
 
 export default function Products() {
   const [productsList, setProductList] = useState([]);
@@ -18,10 +19,11 @@ export default function Products() {
     sort: "asc",
     category: null,
   });
+  const [isLoading, setIsLoading] = useState(false);
   const [pagination, setPagination] = useState(DEFAULT_LIMIT);
+  const [selectedProduct, setSelectedProduct] = useState(null);
   const [lastProductElement, setLastProductElement] = useState(null);
   const obsElement = useObserver(lastProductElement);
-  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     fetchInitialData();
@@ -113,22 +115,27 @@ export default function Products() {
     }
   };
 
+  const updateSelectedProduct = (product) => {
+    setSelectedProduct(product);
+  };
+
   const renderProductList = () => {
     if (productsList.length < 1 && !isLoading) {
-      return (
-        <h2 className="section-title">
-          {TEXT_CONSTANS.NO_PRODUCTS}
-        </h2>
-      );
+      return <h2 className="section-title">{TEXT_CONSTANS.NO_PRODUCTS}</h2>;
     }
 
     return (
       <section className="section">
         <h2 className="section-title">Products List</h2>
         <div className="products-center">
-          {productsList.map((item) => {
+          {productsList.map((product) => {
             return (
-              <ProductList key={item.id} {...item} handleRef={handleRef} />
+              <ProductList
+                key={product.id}
+                product={product}
+                handleRef={handleRef}
+                updateSelectedProduct={updateSelectedProduct}
+              />
             );
           })}
         </div>
@@ -146,6 +153,12 @@ export default function Products() {
       ></Filter>
       {isLoading && <Loader></Loader>}
       {renderProductList()}
+      {selectedProduct && (
+        <ProductDetail
+          selectedProduct={selectedProduct}
+          updateSelectedProduct={updateSelectedProduct}
+        ></ProductDetail>
+      )}
     </div>
   );
 }

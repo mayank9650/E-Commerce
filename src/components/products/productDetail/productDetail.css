@@ -1,0 +1,18 @@
+.details-section {
+  margin-top: 1vw;
+}
+.details-title,
+.details-description,
+.details-category,
+.details-price {
+  margin-bottom: 0.5vw;
+}
+
+.details-category {
+  text-transform: capitalize;
+}
+
+.details-name {
+  min-width: 6rem;
+  display: inline-block;
+}

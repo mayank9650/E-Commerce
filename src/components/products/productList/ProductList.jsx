@@ -4,7 +4,13 @@ import { TEXT_CONSTANS } from "../../../utils/constants";
 
 import "./productList.css";
 
-export default function ProductList({ image, title, category, handleRef }) {
+export default function ProductList({
+  product,
+  handleRef,
+  updateSelectedProduct,
+}) {
+  const { image, title, category } = product;
+
   return (
     <article className="single-product-wrapper" ref={handleRef}>
       <div className="single-product">
@@ -17,6 +23,7 @@ export default function ProductList({ image, title, category, handleRef }) {
           <Button
             text={TEXT_CONSTANS.DETAIL}
             className="btn btn-primary btn-details"
+            onClick={() => updateSelectedProduct(product)}
           ></Button>
         </div>
       </div>
