@@ -4,12 +4,12 @@ import { TEXT_CONSTANS } from "../../../utils/constants";
 
 import "./productList.css";
 
-export default function ProductList({ image, title, category }) {
+export default function ProductList({ image, title, category, handleRef }) {
   return (
-    <article className="single-product-wrapper">
+    <article className="single-product-wrapper" ref={handleRef}>
       <div className="single-product">
         <div className="img-container">
-          <img src={image} alt={title} />
+          <img src={image} alt={title} loading={"lazy"} />
         </div>
         <div className="product-footer">
           <h3 className="title">{title}</h3>

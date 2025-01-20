@@ -7,8 +7,12 @@ export const TEXT_CONSTANS = {
   FILTERS: "Filters",
   WENT_WRONG: "Something went wrong!",
   DETAIL: "Details",
+  NO_PRODUCTS: "No products matched your search criteria",
 };
 
 export const END_POINTS = {
   categories: "/categories",
 };
+
+
+export const DEFAULT_LIMIT = 10;
