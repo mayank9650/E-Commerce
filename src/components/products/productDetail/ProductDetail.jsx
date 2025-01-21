@@ -1,6 +1,7 @@
 import React from "react";
 import Modal from "../../../utils/molecules/modal/Modal";
 import "./productDetail.css";
+import SmoothImage from "../../../utils/atoms/smoothImage/SmoothImage";
 
 export default function ProductDetail({
   selectedProduct,
@@ -10,12 +11,13 @@ export default function ProductDetail({
     <Modal isOpen={true} onClose={() => updateSelectedProduct(null)}>
       <div className="details-container">
         <div className="details-image">
-          <img
+          <SmoothImage
             src={selectedProduct?.image}
-            width={"150px"}
-            height={"150px"}
             alt={selectedProduct?.title}
-          ></img>
+            width={"100%"}
+            height={"100%"}
+            preloader
+          ></SmoothImage>
         </div>
         <div className="details-section">
           <h2 className="details-title">{selectedProduct?.title}</h2>

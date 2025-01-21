@@ -19,7 +19,7 @@ export default function Products() {
     sort: "asc",
     category: null,
   });
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [pagination, setPagination] = useState(DEFAULT_LIMIT);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [lastProductElement, setLastProductElement] = useState(null);

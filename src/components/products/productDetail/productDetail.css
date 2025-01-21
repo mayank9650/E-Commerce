@@ -16,3 +16,7 @@
   min-width: 6rem;
   display: inline-block;
 }
+.details-image {
+  width: 150px;
+  height: 150px;
+}
