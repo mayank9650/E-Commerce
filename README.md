@@ -1,7 +1,7 @@
 # React Vite Project
 
 Welcome to the **React Vite Project** repository! This project is built using React and Vite, optimized for performance and fast development. The project is configured to run with **Node.js version 18**.
-
+For simplicity, this project is purely made with React, and CSS is used for styling.
 
 ## Installation
 
@@ -46,3 +46,20 @@ project-root/
 ```
 
 ---
+
+## Code Patterns
+
+    1.Atomic design pattern for code structure
+    2.Container-Presenter pattern
+    3.Render prop pattern
+
+## Optimization and design
+
+    1.Custom hooks for reusable
+    2.Infinite scrolling for dynmaic data
+    3.React Portals used for modal
+
+## Limitations and enhancements
+
+    1.Api not supporting page based results, can only provide the limit.
+    2.Centerailzed store for storing the data(Context, Redux) when application grows.
