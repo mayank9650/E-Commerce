@@ -1,7 +1,6 @@
 # React Vite Project
 
 Welcome to the **React Vite Project** repository! This project is built using React and Vite, optimized for performance and fast development. The project is configured to run with **Node.js version 18**.
-For simplicity, this project is purely made with React, and CSS is used for styling.
 
 ## Installation
 
