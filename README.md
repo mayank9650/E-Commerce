@@ -40,7 +40,7 @@ project-root/
 │   ├── pages/         # Page components for routing
 │   ├── App.jsx        # Root component
 │   ├── main.jsx       # Entry point
-│   ├── utils/	        # Reusable react components
+│   ├── utils/	       # Reusable react components
 ├── package.json       # Project metadata and dependencies
 ├── vite.config.js     # Vite configuration
 ```
