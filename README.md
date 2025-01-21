@@ -58,8 +58,9 @@ project-root/
     1.Custom hooks for reusable
     2.Infinite scrolling for dynmaic data
     3.React Portals used for modal
+    4.Smooth behaviour while images are loading
 
 ## Limitations and enhancements
 
     1.Api not supporting page based results, can only provide the limit.
-    2.Centerailzed store for storing the data(Context, Redux) when application grows.
+    2.Centralized store for storing the data(Context, Redux) when application grows.
