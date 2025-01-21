@@ -55,7 +55,7 @@ project-root/
 
 ## Optimization and design
 
-    1.Custom hooks for reusable
+    1.Custom hooks for reusability
     2.Infinite scrolling for dynmaic data
     3.React Portals used for modal
     4.Smooth behaviour while images are loading
